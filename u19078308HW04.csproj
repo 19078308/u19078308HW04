@@ -127,6 +127,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\beans.jpg" />
+    <Content Include="App_Data\farmer.jpg" />
+    <Content Include="App_Data\kids.jpg" />
+    <Content Include="App_Data\packaged.jpg" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -164,7 +168,6 @@
     <Content Include="Views\Home\Home.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
