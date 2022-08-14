@@ -129,6 +129,7 @@
   <ItemGroup>
     <Content Include="App_Data\beans.jpg" />
     <Content Include="App_Data\farmer.jpg" />
+    <Content Include="App_Data\Homepage.jpg" />
     <Content Include="App_Data\kids.jpg" />
     <Content Include="App_Data\packaged.jpg" />
     <Content Include="Content\bootstrap-theme.css" />
@@ -166,6 +167,7 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Home\Home.cshtml" />
+    <Content Include="Views\Home\Donate.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\" />

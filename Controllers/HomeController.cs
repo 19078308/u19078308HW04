@@ -24,6 +24,10 @@ namespace u19078308HW04.Controllers
             return View();
         }
 
+        public ActionResult Donate()
+        {
+            return View();
+        }
 
     }
 }
