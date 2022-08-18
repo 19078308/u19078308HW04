@@ -1,0 +1,35 @@
+﻿@Model List<u19078308HW04.Models.Organisations>
+    @{
+        ViewBag.Title = "Members";
+    }
+
+    <h2>Members</h2>
+    <table class="table table-condensed table-responsive">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Contact</th>
+                <th>Application Date</th>
+                <th>Donation Amount</th>
+                <th>Active</th>
+                <th>Type of Organisation</th>
+            </tr>
+
+        </thead>
+        <tbody>
+            @foreach (var organisations in Model)
+            {
+                <tr>
+                    <th>@organisations.FullName</th>
+                    <th>@organisations.Numbers</th>
+                    <th>@organisations.Date</th>
+                    <th>@organisations.Amount</th>
+                    <th>@organisations.Status</th>
+                    <th>@organisations.Type </th>
+                </tr>
+
+            }
+        </tbody>
+
+    </table>
+

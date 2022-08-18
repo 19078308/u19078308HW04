@@ -1,7 +1,32 @@
-﻿
+﻿@model List<u19078308HW04.Models.Individuals>
 @{
     ViewBag.Title = "Donate";
 }
+ <h2>Individual Donations</h2>
+    <table class="table table-condensed">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Contact</th>
+                <th>Application Date</th>
+                <th>Donation Amount</th>
+                <th>Volunteering</th>
 
-<h2>Donate</h2>
+            </tr>
+
+        </thead>
+        <tbody>
+            @foreach (var donors in Model)
+            {
+                <tr>
+                    <th>@donors.FullName</th>
+                    <th>@donors.Numbers</th>
+                    <th>@donors.Date</th>
+                    <th>@donors.Amount</th>
+                    <th>@donors.Volunteer</th>
+                </tr>
+
+            }
+        </tbody>
+       </table>
 
