@@ -27,7 +27,15 @@ namespace u19078308HW04.Controllers
         }
         public ActionResult Home()
         {
-            return View();
+            List<Members> members = new List<Members>();
+            Individuals donor1 = new Individuals("Adila Lekau", 0823548756, "2022/08/22", 2000, true);
+            Organisations organisations1 = new Organisations("Tshepo Mononyane", 0762444724, "2022/08/18", 100000.00, "Founder", true);
+            Organisations organisations2 = new Organisations("Zandile Holdings", 0609512344, "2022/08/18", 25000.00, "SmallHolder Farmers", true);
+
+            members.Add(organisations1);
+            members.Add(organisations2);
+            members.Add(donor1);
+            return View(members);
         }
 
         public ActionResult Donate()
