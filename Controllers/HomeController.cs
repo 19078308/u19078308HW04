@@ -14,6 +14,11 @@ namespace u19078308HW04.Controllers
             return View();
         }
 
+        public ActionResult Contact()
+        {
+            return View();
+        }
+
         public ActionResult About()
         {
             ViewBag.Message = "Our mission and Our focus";

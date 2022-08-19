@@ -21,9 +21,25 @@
             <div class="navbar-collapse collapse ">
                 <ul class="nav navbar-nav navbar-right">
                     <li>@Html.ActionLink("Home", "Home", "Home")</li>
-                    <li>@Html.ActionLink("About Us", "About", "Home")</li>
-                    <li>@Html.ActionLink("How Can I Help", "Donate", "Home")</li>
-                    <li>@Html.ActionLink("Members", "Members", "Home")</li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                            About Us<span class="caret"></span>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li>@Html.ActionLink("About Us", "About", "Home")</li>
+                            <li>@Html.ActionLink("Contact Us", "Contact", "Home")</li>
+                        </ul>
+                     </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                            Donate<span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>@Html.ActionLink("How Can I Help?", "Donate", "Home")</li>
+                            <li>@Html.ActionLink("Members", "Members", "Home")</li>
+                        </ul>
+                    </li>
 
                 </ul>
             </div>

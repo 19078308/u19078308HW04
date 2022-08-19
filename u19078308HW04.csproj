@@ -130,11 +130,11 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Data\beans.jpg" />
-    <Content Include="App_Data\farmer.jpg" />
-    <Content Include="App_Data\Homepage.jpg" />
-    <Content Include="App_Data\kids.jpg" />
-    <Content Include="App_Data\packaged.jpg" />
+    <Content Include="App_Data\Images\beans.jpg" />
+    <Content Include="App_Data\Images\farmer.jpg" />
+    <Content Include="App_Data\Images\Homepage.jpg" />
+    <Content Include="App_Data\Images\kids.jpg" />
+    <Content Include="App_Data\Images\packaged.jpg" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -172,6 +172,7 @@
     <Content Include="Views\Home\Home.cshtml" />
     <Content Include="Views\Home\Donate.cshtml" />
     <Content Include="Views\Home\Members.cshtml" />
+    <Content Include="Views\Home\Contact.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
