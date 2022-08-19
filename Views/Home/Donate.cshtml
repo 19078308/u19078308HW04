@@ -21,6 +21,7 @@
 
             var datafile = Server.MapPath("~/App_Data/data.txt");
             File.AppendAllText(datafile, tempdata);
+           @* result = "Thank you for your contributions. Your Information is saved and proctected."; *@
         }
     }
 <div class="jumbotron">
@@ -78,7 +79,6 @@
 
         <input class="btn btn-success btn-lg" type="submit" value="Submit">
 
-
     </form>
 </div>
 </div><br /> <hr />
@@ -92,6 +92,7 @@
                 <th>Application Date</th>
                 <th>Donation Amount(R)</th>
                 <th>Volunteering</th>
+                <th>Description</th>
 
             </tr>
 
@@ -99,13 +100,14 @@
         <tbody>
             @foreach (var donors in Model)
             {
-                <tr>
-                    <th>@donors.FullName</th>
-                    <th>@donors.Numbers</th>
-                    <th>@donors.Date</th>
-                    <th>@donors.Amount</th>
-                    <th>@donors.Volunteer</th>
-                </tr>
+            <tr>
+                <th>@donors.FullName</th>
+                <th>@donors.Numbers</th>
+                <th>@donors.Date</th>
+                <th>@donors.Amount</th>
+                <th>@donors.Volunteer</th>
+                <th>@donors.Decription()</th>
+            </tr>
 
             }
         </tbody>

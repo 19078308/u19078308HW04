@@ -13,20 +13,22 @@
                 <th>Donation Amount</th>
                 <th>Active</th>
                 <th>Type of Organisation</th>
+                <th>Description</th>
             </tr>
 
         </thead>
         <tbody>
             @foreach (var organisations in Model)
             {
-                <tr>
-                    <th>@organisations.FullName</th>
-                    <th>@organisations.Numbers</th>
-                    <th>@organisations.Date</th>
-                    <th>@organisations.Amount</th>
-                    <th>@organisations.Status</th>
-                    <th>@organisations.Type </th>
-                </tr>
+            <tr>
+                <th>@organisations.FullName</th>
+                <th>@organisations.Numbers</th>
+                <th>@organisations.Date</th>
+                <th>@organisations.Amount</th>
+                <th>@organisations.Status</th>
+                <th>@organisations.Type </th>
+                <th>@organisations.Description() </th>
+            </tr>
 
             }
         </tbody>
