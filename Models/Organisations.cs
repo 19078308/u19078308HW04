@@ -27,6 +27,11 @@ namespace u19078308HW04.Models
             set { _Status = value; }
          }
 
-        
+        public override string Decription()
+        {
+            return base.Decription(); 
+        }
+
+
     }
 }

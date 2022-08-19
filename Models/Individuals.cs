@@ -17,6 +17,10 @@ namespace u19078308HW04.Models
             get { return _Volunteer; }
             set { _Volunteer = value; }
         }
+        public override string Decription()
+        {
+            return Volunteer ?  base.Decription() + " And they also agreed to volunteer. " : " but they do not offer volunteering" ;
+        }
     }
     
 

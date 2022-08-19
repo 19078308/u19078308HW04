@@ -41,9 +41,9 @@ namespace u19078308HW04.Models
             set { _Amount = value; }
         }
 
-        public string Decription()
+        public virtual string Decription()
         {
-            return FullName + "donated R" + Amount.ToString() + "towards our Organisation";
+            return FullName + " donated R" + Amount.ToString() + " towards our Organisation ";
 
         }
     }
