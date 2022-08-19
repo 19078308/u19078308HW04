@@ -5,7 +5,7 @@ using System.Web;
 
 namespace u19078308HW04.Models
 {
-    public class Members
+    public abstract class Members
     {
         private string _FullName;
         private int _Numbers;
@@ -46,5 +46,7 @@ namespace u19078308HW04.Models
             return FullName + " donated R" + Amount.ToString() + " towards our Organisation ";
 
         }
+
+        public abstract string participation();
     }
 }

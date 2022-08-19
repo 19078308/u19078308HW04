@@ -21,6 +21,11 @@ namespace u19078308HW04.Models
         {
             return Volunteer ?  base.Decription() + " And they also agreed to volunteer. " : " but they do not offer volunteering" ;
         }
+
+        public override string participation()
+        {
+            return "Yes they participate in our programs";
+        }
     }
     
 

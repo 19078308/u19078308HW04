@@ -66,6 +66,7 @@
             <option>Smallholder Farmers</option>
             <option>Agri-Business</option>
             <option>Financial Sector</option>
+            <option>Other</option>
         </select>
         <br />
 
@@ -84,15 +85,16 @@
 </div><br /> <hr />
 <div>
     <h2>Individual Donations</h2>
-    <table class="table table-condensed">
-        <thead>
-            <tr>
+    <table class="table table-condensed table-bordered table-responsive">
+        <thead >
+            <tr >
                 <th>Name</th>
                 <th>Contact</th>
                 <th>Application Date</th>
                 <th>Donation Amount(R)</th>
                 <th>Volunteering</th>
                 <th>Description</th>
+                <th>Comment</th>
 
             </tr>
 
@@ -107,6 +109,7 @@
                 <th>@donors.Amount</th>
                 <th>@donors.Volunteer</th>
                 <th>@donors.Decription()</th>
+                <th>@donors.participation()</th>
             </tr>
 
             }

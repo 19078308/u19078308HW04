@@ -21,15 +21,20 @@ namespace u19078308HW04.Models
             get { return _Type; }
             set { _Type = value; }
         }
-         public bool Status
-         {
-            get { return _Status; }
-            set { _Status = value; }
-         }
-
+        public bool Status
+        {
+           get { return _Status; }
+           set { _Status = value; }
+        }
+        
         public override string Decription()
         {
-            return base.Decription(); 
+            return base.Decription() + "They are a(an) " + Type; 
+        }
+
+        public override string participation()
+        {
+            return "They are also our members";
         }
 
 

@@ -4,16 +4,17 @@
     }
 
     <h2>Members</h2>
-    <table class="table table-condensed table-responsive">
+    <table class="table table-condensed table-bordered table-responsive">
         <thead>
             <tr>
                 <th>Name</th>
                 <th>Contact</th>
                 <th>Application Date</th>
                 <th>Donation Amount</th>
-                <th>Active</th>
+                <th>Active</th> 
                 <th>Type of Organisation</th>
                 <th>Description</th>
+                <th>Comment </th>
             </tr>
 
         </thead>
@@ -27,7 +28,8 @@
                 <th>@organisations.Amount</th>
                 <th>@organisations.Status</th>
                 <th>@organisations.Type </th>
-                <th>@organisations.Decription</th>
+                <th>@organisations.Decription()</th>
+                <th>@organisations.participation()</th>
             </tr>
 
             }
